@@ -42,9 +42,19 @@ public class TestFizzBuzz {
     public void TestRetorna_div5(){
     
         FizzBuzz fb = new FizzBuzz();
-        String result = fb.getBuzz(5);
+        String result = fb.getBuzz(10);
         assertEquals("Buzz",result);
     }
+    
+    @Test
+    public void TestRetorna_FizzBuzz(){
+    
+        FizzBuzz fb = new FizzBuzz();
+        String result = fb.getFizzBuzz_1(90);
+        assertEquals("FizzBuzz",result);
+    }
+    
+    
     
     
 
