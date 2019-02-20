@@ -23,6 +23,7 @@ public class TestFizzBuzz {
         assertEquals("1",result);
     }
     
+    @Test
     public void TestRetorna_2(){
     
         FizzBuzz fb = new FizzBuzz();
