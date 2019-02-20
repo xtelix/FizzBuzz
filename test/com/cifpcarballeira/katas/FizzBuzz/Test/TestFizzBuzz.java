@@ -15,13 +15,12 @@ import static org.junit.Assert.*;
  */
 public class TestFizzBuzz {
     
-    public TestFizzBuzz() {
+    @Test
+    public void TestRetorna_1() {
+    
+        FizzBuzz fb = new FizzBuzz();
+        String result = fb.getFizzBuzz(1);
+        assertEquals("1",result);
     }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
 
 }
