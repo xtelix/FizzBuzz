@@ -5,6 +5,9 @@
  */
 package com.cifpcarballeira.katas.FizzBuzz.Test;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  *
  * @author dam205
@@ -18,8 +21,30 @@ public class FizzBuzz {
     
     public String getFizz(int i){
     
-        if(i%3 == 0)
+        if(i%3 == 0 || ValNum(i+""))
         return "Fizz";
-        else return "";
+        else return i+"";
+    }
+    
+    public String getBuzz(int i){
+    
+        if(i%5 == 0 || ValNum(i+""))
+        return "Buzz";
+        else return i+"";
+    }
+    
+    public String getFizzBuzz_1(int i){
+    
+        if(i%5 == 0 && i%3 == 0)
+        return "FizzBuzz";
+        else return i+"";
+    }
+      
+    public boolean ValNum( String s )
+    {
+    Pattern p = Pattern.compile( "3" );
+    Matcher m = p.matcher( s );
+
+    return m.find();
     }
 }

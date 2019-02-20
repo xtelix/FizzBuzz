@@ -38,5 +38,14 @@ public class TestFizzBuzz {
         assertEquals("Fizz",result);
     }
     
+    @Test
+    public void TestRetorna_div5(){
+    
+        FizzBuzz fb = new FizzBuzz();
+        String result = fb.getBuzz(5);
+        assertEquals("Buzz",result);
+    }
+    
+    
 
 }
