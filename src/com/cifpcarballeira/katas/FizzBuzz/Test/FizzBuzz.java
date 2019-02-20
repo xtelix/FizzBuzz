@@ -39,6 +39,13 @@ public class FizzBuzz {
         return "FizzBuzz";
         else return i+"";
     }
+    
+    public String getFizzBuzz_All(int num){
+    
+        FizzBuzz fb = new FizzBuzz();
+        if("Fizz".equals(fb.getFizz(num)) && "Buzz".equals(fb.getBuzz(num))) return "FizzBuzz";
+        else return num+"";
+    }
       
     public boolean ValNum( String s )
     {

@@ -54,6 +54,15 @@ public class TestFizzBuzz {
         assertEquals("FizzBuzz",result);
     }
     
+    @Test
+    public void TestRetorna_FizzBuzz_All(){
+    
+        FizzBuzz fb = new FizzBuzz();
+        String result = fb.getFizzBuzz_All(15);
+        assertEquals("FizzBuzz",result);      
+
+    }
+    
     
     
     
