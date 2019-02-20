@@ -21,14 +21,14 @@ public class FizzBuzz {
     
     public String getFizz(int i){
     
-        if(i%3 == 0 || ValNum(i+""))
+        if(i%3 == 0 || ValNum(i+"",3))
         return "Fizz";
         else return i+"";
     }
     
     public String getBuzz(int i){
     
-        if(i%5 == 0 || ValNum(i+""))
+        if(i%5 == 0 || ValNum(i+"",5))
         return "Buzz";
         else return i+"";
     }
@@ -47,9 +47,9 @@ public class FizzBuzz {
         else return num+"";
     }
       
-    public boolean ValNum( String s )
+    public boolean ValNum( String s, int num)
     {
-    Pattern p = Pattern.compile( "3" );
+    Pattern p = Pattern.compile( num+"" );
     Matcher m = p.matcher( s );
 
     return m.find();

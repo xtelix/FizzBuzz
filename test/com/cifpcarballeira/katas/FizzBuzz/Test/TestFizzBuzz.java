@@ -34,7 +34,7 @@ public class TestFizzBuzz {
     public void TestRetorna_3(){
     
         FizzBuzz fb = new FizzBuzz();
-        String result = fb.getFizz(6);
+        String result = fb.getFizz(30);
         assertEquals("Fizz",result);
     }
     
