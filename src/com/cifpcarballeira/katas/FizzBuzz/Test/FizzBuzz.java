@@ -15,4 +15,11 @@ public class FizzBuzz {
     
         return i+"";
     }
+    
+    public String getFizz(int i){
+    
+        if(i%3 == 0)
+        return "Fizz";
+        else return "";
+    }
 }
